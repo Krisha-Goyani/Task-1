@@ -31,6 +31,9 @@ body{
 .f-450{
     font-weight: 450;
 }
+.f-700{
+    font-weight: 700;
+}
 .ivy{
     font-family: ivy-presto-display;
     font-weight: 100;
@@ -41,6 +44,7 @@ body{
     width: 100%;
     margin: auto;
     height: 100%;
+    background: wheat;
 }
 .crossline{
     width: 100%;
@@ -74,6 +78,12 @@ body{
 }
 .mt-1{
     margin-top: 0.5rem;
+}
+.mt-4{
+    margin-top: 1.5rem;
+}
+.mb-4{
+    margin-bottom: 1.5rem;
 }
 .pb-4, .py-4 {
     padding-bottom: 1.5rem !important;
@@ -111,18 +121,21 @@ h1, h2, h3, h4, h5, h6 {
     background: #79AE48;
     border: none;
 }
-/* @media(max-width:992px){
-    
-    .lg-flex{
-        display: flex;
+ @media(min-width:992px){
+    .m5-loc{
+        max-width: 1580px;
+        width: 100%;
+        max-height: 252px;
+        height: 100%;
     }
-    .lg-flex-col{
-        flex-direction: column;
+    .text-5xl{
+        font-size: 3rem;
+        line-height: 1;	/*48px*/
     }
-    .lg-wrap{
-        flex-wrap: wrap;
-    }
-} */
+    .p-7{
+    padding: 1.75rem;
+    	}	/*28px*/
+} 
  .crossline1{
     width: 100%;
     height: 40px;
@@ -199,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
     } /*30px*/
     .xs-text-3_xl{
         font-size: 2rem;
-    }
+    } /*32px*/
     .xs-text-5xl{
         font-size: 2.5rem;
         line-height: 1;
@@ -293,7 +306,26 @@ h1, h2, h3, h4, h5, h6 {
 .special{
     grid-column: 2/3;
 }
+@media (min-width:377px)and (max-width:992px){
+    .xs-p{
+        padding: 0 20px;
+    }
+    .xs-text-base{
+        font-size: 1rem;
+        line-height: 1.5rem;/*16px*/	
+    }
+    .xs-text-lg{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    	}	/*18px*/
+        .xs-text-3_xl{
+            font-size: 2rem;
+        } /*32px*/
+}
 @media (min-width:377px)and (max-width:638px){
+    .xs-p{
+        padding: 0 20px;
+    }
     .m5-b-t{
         padding-top: 2rem;
         justify-self: center;
@@ -310,11 +342,6 @@ h1, h2, h3, h4, h5, h6 {
     .m5-wh{
         max-width: 600px;
         width: 100%;
-    }
-    .m5-container{
-        max-width: 640px;
-        width: 100%;
-        border: 2px salmon;
     }
     /* .m5-img{
         max-width: 300px;
@@ -349,10 +376,17 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2.25rem;
         line-height: 3.5rem;
     }
+    .m5-text-3_xl{
+        font-size: 2rem;
+    } /*32px*/
     .m5-text-xl{
         font-size: 1.25rem;
         line-height: 1.25rem;
     }	/*20px*/
+    .xs-text-lg{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    	}	/*18px*/
     .m5-text-base{
         font-size: 1rem;
         line-height: 1.5rem;
@@ -508,9 +542,6 @@ h1, h2, h3, h4, h5, h6 {
         /* min-width: min-content; */
         max-width: 100%;
     }
-    .sm-container{
-        max-width: 640px;
-    }
     .text-sm{
         font-size: 0.875rem;
         line-height: 1.25rem;	/*14px*/
@@ -571,6 +602,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 @media(min-width:992px) and (max-width:1280px){
+
     .lg-b-t{
         padding-top: 2.5rem;
         justify-self: center;
@@ -593,11 +625,6 @@ h1, h2, h3, h4, h5, h6 {
     }
     .lg-gap{
         gap: 55px;
-    }
-    .lg-container{
-        max-width: 1279 px;
-        width: 100%;
-        border: 2px solid blue;
     }
     .lg-height{
         height: 381px;
