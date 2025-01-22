@@ -131,9 +131,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #79AE48;
     border: none;
 }
-
-
-
 .button-4{
     max-width: 210px;
     width: 100%;
@@ -203,6 +200,12 @@ a {
 }
  
 @media(max-width:376px){
+    .xs-gap-16{
+        gap: 16px;
+    }
+    .xs-gap-12{
+        gap: 12px;
+    }
     .px-5{
         padding-left: 1.25rem;
         padding-right: 1.25rem;	
@@ -370,6 +373,9 @@ a {
     .min-items-center{
         align-items: center;
     }
+    .p-7 {
+        padding: 2rem 1rem 2rem;
+    }
 }
 @media (min-width:377x) and (max-width:500) {
     .m3-text-4xl{
@@ -505,10 +511,12 @@ a {
     }
 } 
 @media (min-width:376px)and (max-width:992px){
+    .xs-gap-12{
+        gap: 12px;
+    }
     .xs-m-5{
         margin-left: 1.25rem;
     }
-
     .d-p-20{
         padding-left: 20px;
     }
@@ -567,6 +575,14 @@ a {
         font-size: 1rem;
         line-height: 1.5rem;/*16px*/	
     }
+    .xs-text-20px{
+        font-size: 1.25rem;
+        line-height: 25.3px;
+    }
+    .xs-text-14px{
+        font-size: 0.875rem;
+        line-height: 17.71px;
+    }
     .xs-text-lg{
         font-size: 1.125rem;
         line-height: 1.75rem;
@@ -599,11 +615,17 @@ a {
     .min-gap1{
         gap: 15px;
     }
+    .min-gap-16{
+        gap: 16px;
+    }
     .min-gap2{
         gap: 32px;
     }
     .min-gap{
         gap: 20px;
+    }
+    .min-gap-8{
+        gap: 8px;
     }
     .min-justify-between{
         justify-content: space-between;
@@ -621,6 +643,12 @@ a {
         padding-left: 1.25rem;
         padding-right: 1.25rem;	
     }/*20px*/
+    .p-7 {
+        padding: 2rem 1rem 2rem;
+    }
+    .m-t-2xl{
+        margin-top: 3rem;
+    }
 }
 
 @media (min-width: 641px){
@@ -647,7 +675,7 @@ a {
         font-size: 1.25rem;
     }
     .p-7 {
-        padding: 3rem 1rem 2rem;
+        padding: 2rem 1rem 2rem;
     }
     .sm-img-mx-w{
         max-width: 600px;
@@ -755,6 +783,9 @@ a {
         font-size: 2rem;
         line-height: 2.5rem;	/*36px*/
     }
+    .sm-text-2xl{
+        font-size: 1.5rem;
+    }
     .rounded-sm{
         border-radius: 0.125rem;
     }
@@ -791,7 +822,13 @@ a {
     }
 }
 @media(min-width:993px){
-    .m{
+    .m-t-2xl{
+        margin-top: 3rem;
+    }
+    .d-gap-8px{
+        gap: 8px;
+    }
+    .d-m{
         max-width: 718px;
         width: 100%;
         margin: auto;
@@ -872,6 +909,10 @@ a {
         font-size: 1.125rem;
         line-height: 1.75rem;
     }	/*18px*/
+    .d-text-20px{
+        font-size: 1rem;
+        line-height: 20.24px;
+    }
     .gap{
         gap: 40px;
     }
@@ -896,6 +937,12 @@ a {
     }
     .d-gap-30{
         gap: 20px;
+    }
+    .d-gap-16{
+        gap:16px
+    }
+    .d-gap-12{
+        gap:12px
     }
     .d-p{
         padding: 0 60px;
@@ -946,7 +993,25 @@ a {
      height: 100%;
      padding: 15px 20px;
     }
-    
+    .text-2xl-2xl{
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    .text-4xl-2xl{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .xl-text-2_xl{
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+    .d-56px{
+        font-size: 56px;
+        line-height: 83.05px;
+    }
+    .text-5_xl-2xl{
+        font-size: 3.50rem; /*56px*/
+    }
 } 
 @media(min-width:993px) and (max-width:1280px){
     .work{
@@ -954,6 +1019,7 @@ a {
     grid-template-columns: 315px 315px 315px;
     padding: 0 10px;
     grid-column-gap: 15px;
+    justify-content: space-evenly;
     }
     .col-6-2xl{
         flex: 0 0 50%;
@@ -1153,6 +1219,10 @@ a {
         font-size: 1.5rem;
         line-height: 2rem;
     }
+    .xl-text-2_xl{
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
     .xl-text-6xl{
         font-size: 4.063rem;
         line-height: 1;
@@ -1192,7 +1262,9 @@ a {
         padding-bottom: 20px;
     }
 }
+@media (min-width:1456px){
 
+}
 @media (min-width:1536px) {
     .gleam-2xl{
         max-width: 718px;
@@ -1222,18 +1294,16 @@ a {
         padding: 0 4rem;
         /* margin: 1rem; */
     }
-    .m-t-2xl{
-        margin-top: 3rem;
-    }
+   
     .gap-50-2xl{
         gap: 100px;
     }
     .text-2xl-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 24px;
     }
     .text-4xl-2xl{
-        font-size: 2.25rem;
+        font-size: 1.5rem;
         line-height: 2.5rem;
     }
     .p-xl-5 {
